@@ -41,7 +41,7 @@ EC_EI_040 ดัชนีราคารถยนต์มือสอง 1/
 ข้อจำกัดสำคัญของ source:
 
 ```text
-BOT report ระบุช่วงข้อมูลที่มีจริงเป็น ม.ค. 2554 - เม.ย. 2569
+BOT report ระบุช่วงข้อมูลที่มีจริงเป็น ม.ค. 2554 - พ.ค. 2569
 จึงไม่ควรเติมข้อมูลปี 2550-2553 เอง หากไม่มี source อื่นรองรับ
 ```
 
@@ -97,9 +97,9 @@ imbExportText.y=12
 ในการ run จริง ณ dashboard ต้นฉบับ:
 
 ```text
-ปรับปรุงล่าสุด : 29 พ.ค. 2569 14:30
-วันที่เรียกข้อมูล : 11 มิ.ย. 2569 10:10
-ช่วงข้อมูล: ม.ค. 2554 - เม.ย. 2569
+ปรับปรุงล่าสุด : 30 มิ.ย. 2569 14:30
+วันที่เรียกข้อมูล : 15 ก.ค. 2569 23:06
+ช่วงข้อมูล: ม.ค. 2554 - พ.ค. 2569
 ```
 
 ## 5. โครงสร้างข้อมูลต้นทาง
@@ -123,7 +123,8 @@ Map series เป็น category:
 Header เดือนใน CSV เป็นภาษาไทยและปี พ.ศ. เช่น:
 
 ```text
-เม.ย. 2569 p
+พ.ค. 2569 p
+เม.ย. 2569
 มี.ค. 2569
 ก.พ. 2569
 ม.ค. 2569
@@ -142,10 +143,10 @@ year_ce = year_be - 543
 ```text
 year_be = 2569
 year_ce = 2026
-date = 2026-04
-month = 4
-period_label = เม.ย. 2569
-period_display = เม.ย. 2569
+date = 2026-05
+month = 5
+period_label = พ.ค. 2569
+period_display = พ.ค. 2569
 provisional = true ถ้า header มี p
 ```
 
@@ -156,15 +157,15 @@ provisional = true ถ้า header มี p
 จำนวน rows ที่ถูกต้องใน dashboard ต้นฉบับ:
 
 ```text
-184 เดือน x 3 series = 552 rows
+185 เดือน x 3 series = 555 rows
 ```
 
 ค่าสุดท้ายที่ต้อง reconcile ได้:
 
 ```text
-รถยนต์นั่งมือสอง เม.ย. 2569 = 86.68
-รถยนต์บรรทุกมือสอง เม.ย. 2569 = 63.81
-ดัชนีรวม เม.ย. 2569 = 72.75
+รถยนต์นั่งมือสอง พ.ค. 2569 = 87.78
+รถยนต์บรรทุกมือสอง พ.ค. 2569 = 66.81
+ดัชนีรวม พ.ค. 2569 = 75.15
 ```
 
 ## 7. การสร้างข้อมูลรายไตรมาส
@@ -197,7 +198,7 @@ status = partial/YTD
 ตัวอย่างใน dashboard ต้นฉบับ:
 
 ```text
-Q2 2569 มีแค่ เม.ย. 2569 เพราะข้อมูลล่าสุดถึง เม.ย. 2569
+Q2 2569 มีข้อมูล เม.ย. และ พ.ค. 2569 เพราะข้อมูลล่าสุดถึง พ.ค. 2569
 ดังนั้น Q2 2569 = partial/YTD
 ```
 
@@ -228,8 +229,8 @@ status = partial/YTD
 ตัวอย่างใน dashboard ต้นฉบับ:
 
 ```text
-ปี 2569 เป็น YTD Jan-Apr
-รถยนต์นั่งมือสอง ปี 2569 YTD = 95.57
+ปี 2569 เป็น YTD ม.ค.-พ.ค.
+รถยนต์นั่งมือสอง ปี 2569 YTD = 94.01
 ```
 
 จำนวน rows รายปีที่ถูกต้อง:
@@ -305,8 +306,8 @@ current year average เทียบ previous year average
 1. Header
    - ชื่อ dashboard: `Dashboard ราคารถยนต์มือสอง`
    - subtitle: `ดัชนีราคารถยนต์นั่งมือสองและรถยนต์บรรทุกมือสอง จาก BOT EC_EI_040`
-   - badge coverage: `ม.ค. 2554 - เม.ย. 2569`
-   - badge latest: `เม.ย. 2569`
+   - badge coverage: `ม.ค. 2554 - พ.ค. 2569`
+   - badge latest: `พ.ค. 2569`
    - badge base index: `ปี 2558 = 100`
 
 2. KPI cards 4 ใบ
@@ -518,8 +519,8 @@ Table note ด้านขวาบนควรแสดง:
 
 ```text
 coverage_start = 2011-01
-coverage_end = 2026-04
-monthly rows = 552
+coverage_end = 2026-05
+monthly rows = 555
 quarterly rows = 186
 yearly rows = 48
 ```
@@ -527,18 +528,18 @@ yearly rows = 48
 ค่าสุดท้าย:
 
 ```text
-passenger Apr 2026 = 86.68
-truck Apr 2026 = 63.81
-overall Apr 2026 = 72.75
+passenger May 2026 = 87.78
+truck May 2026 = 66.81
+overall May 2026 = 75.15
 ```
 
 YTD flag:
 
 ```text
 ปี 2569 complete = false
-ปี 2569 month_count = 4
+ปี 2569 month_count = 5
 Q2 2569 complete = false
-Q2 2569 month_count = 1
+Q2 2569 month_count = 2
 ```
 
 ### UI validation
@@ -668,12 +669,12 @@ Output:
 Dashboard ต้นฉบับสร้างและ validate แล้วด้วยข้อมูล:
 
 ```text
-coverage: ม.ค. 2554 - เม.ย. 2569
-monthly rows: 552
+coverage: ม.ค. 2554 - พ.ค. 2569
+monthly rows: 555
 quarterly rows: 186
 yearly rows: 48
-latest passenger: เม.ย. 2569 = 86.68
-latest truck: เม.ย. 2569 = 63.81
+latest passenger: พ.ค. 2569 = 87.78
+latest truck: พ.ค. 2569 = 66.81
 ```
 
 Click validation ผ่าน:

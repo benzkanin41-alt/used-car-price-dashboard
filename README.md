@@ -21,7 +21,7 @@ https://app.bot.or.th/BTWS_STAT/statistics/BOTWEBSTAT.aspx?reportID=919&language
 Coverage ใน dashboard ชุดนี้:
 
 ```text
-ม.ค. 2554 - เม.ย. 2569
+ม.ค. 2554 - พ.ค. 2569
 ```
 
 BOT ระบุฐานดัชนี:
@@ -52,12 +52,12 @@ screenshots/
 
 ## Validation
 
-Validated locally before publish:
+Validated locally before publish on 2026-07-15 (BOT source updated 2026-06-30):
 
 ```text
-monthly rows: 552
+monthly rows: 555
 quarterly rows: 186
 yearly rows: 48
-latest passenger Apr 2026: 86.68
-latest truck Apr 2026: 63.81
+latest passenger May 2026: 87.78
+latest truck May 2026: 66.81
 ```

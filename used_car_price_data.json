@@ -2,13 +2,13 @@
   "meta": {
     "source_url": "https://app.bot.or.th/BTWS_STAT/statistics/BOTWEBSTAT.aspx?reportID=919&language=TH",
     "source_report": "BOT EC_EI_040 ดัชนีราคารถยนต์มือสอง",
-    "source_updated": "ปรับปรุงล่าสุด : 29 พ.ค. 2569 14:30",
-    "source_requested": "วันที่เรียกข้อมูล : 11 มิ.ย. 2569 10:10",
-    "generated_at": "2026-06-11",
+    "source_updated": "ปรับปรุงล่าสุด : 30 มิ.ย. 2569 14:30",
+    "source_requested": "วันที่เรียกข้อมูล : 15 ก.ค. 2569 23:06",
+    "generated_at": "2026-07-15",
     "coverage_start": "2011-01",
-    "coverage_end": "2026-04",
-    "coverage_label": "ม.ค. 2554 - เม.ย. 2569",
-    "latest_month_label": "เม.ย. 2569",
+    "coverage_end": "2026-05",
+    "coverage_label": "ม.ค. 2554 - พ.ค. 2569",
+    "latest_month_label": "พ.ค. 2569",
     "index_base": "ปี 2558 = 100",
     "years": [
       2554,
@@ -53,7 +53,7 @@
       "2568": "#c026d3",
       "2569": "#16a34a"
     },
-    "coverage_caveat": "BOT report ระบุช่วงข้อมูล ม.ค. 2554 - เม.ย. 2569; ไม่มีข้อมูลปี 2550-2553 จาก source นี้"
+    "coverage_caveat": "BOT report ระบุช่วงข้อมูล ม.ค. 2554 - พ.ค. 2569; ไม่มีข้อมูลปี 2550-2553 จาก source นี้"
   },
   "monthly": [
     {
@@ -3176,13 +3176,30 @@
       "period_index": 4,
       "period_label": "เม.ย. 2569",
       "period_display": "เม.ย. 2569",
-      "provisional": true,
+      "provisional": false,
       "category": "overall",
       "category_th": "ดัชนีรวม",
       "source_series": "ดัชนีราคารถยนต์มือสอง",
       "value": 72.75,
       "chg_prev_pct": -9.64,
       "chg_yoy_pct": -4.14
+    },
+    {
+      "date": "2026-05",
+      "year_ce": 2026,
+      "year_be": 2569,
+      "month": 5,
+      "month_th": "พ.ค.",
+      "period_index": 5,
+      "period_label": "พ.ค. 2569",
+      "period_display": "พ.ค. 2569",
+      "provisional": true,
+      "category": "overall",
+      "category_th": "ดัชนีรวม",
+      "source_series": "ดัชนีราคารถยนต์มือสอง",
+      "value": 75.15,
+      "chg_prev_pct": 3.3,
+      "chg_yoy_pct": -2.92
     },
     {
       "date": "2011-01",
@@ -6304,13 +6321,30 @@
       "period_index": 4,
       "period_label": "เม.ย. 2569",
       "period_display": "เม.ย. 2569",
-      "provisional": true,
+      "provisional": false,
       "category": "passenger",
       "category_th": "รถยนต์นั่งมือสอง",
       "source_series": "ดัชนีราคารถยนต์นั่งมือสอง",
       "value": 86.68,
       "chg_prev_pct": -12.78,
       "chg_yoy_pct": -11.42
+    },
+    {
+      "date": "2026-05",
+      "year_ce": 2026,
+      "year_be": 2569,
+      "month": 5,
+      "month_th": "พ.ค.",
+      "period_index": 5,
+      "period_label": "พ.ค. 2569",
+      "period_display": "พ.ค. 2569",
+      "provisional": true,
+      "category": "passenger",
+      "category_th": "รถยนต์นั่งมือสอง",
+      "source_series": "ดัชนีราคารถยนต์นั่งมือสอง",
+      "value": 87.78,
+      "chg_prev_pct": 1.27,
+      "chg_yoy_pct": -8.33
     },
     {
       "date": "2011-01",
@@ -9432,13 +9466,30 @@
       "period_index": 4,
       "period_label": "เม.ย. 2569",
       "period_display": "เม.ย. 2569",
-      "provisional": true,
+      "provisional": false,
       "category": "truck",
       "category_th": "รถยนต์บรรทุกมือสอง",
       "source_series": "ดัชนีราคารถยนต์บรรทุกมือสอง",
       "value": 63.81,
       "chg_prev_pct": -6.83,
       "chg_yoy_pct": 0.44
+    },
+    {
+      "date": "2026-05",
+      "year_ce": 2026,
+      "year_be": 2569,
+      "month": 5,
+      "month_th": "พ.ค.",
+      "period_index": 5,
+      "period_label": "พ.ค. 2569",
+      "period_display": "พ.ค. 2569",
+      "provisional": true,
+      "category": "truck",
+      "category_th": "รถยนต์บรรทุกมือสอง",
+      "source_series": "ดัชนีราคารถยนต์บรรทุกมือสอง",
+      "value": 66.81,
+      "chg_prev_pct": 4.7,
+      "chg_yoy_pct": -0.37
     }
   ],
   "quarterly": [
@@ -10488,13 +10539,13 @@
       "period_index": 2,
       "period_label": "Q2",
       "period_display": "Q2 2569",
-      "value": 72.75,
-      "month_count": 1,
+      "value": 73.95,
+      "month_count": 2,
       "complete": false,
-      "months": "04",
+      "months": "04,05",
       "provisional": true,
-      "chg_prev_pct": -7.74,
-      "chg_yoy_pct": -4.76
+      "chg_prev_pct": -6.22,
+      "chg_yoy_pct": -3.19
     },
     {
       "category": "passenger",
@@ -11542,13 +11593,13 @@
       "period_index": 2,
       "period_label": "Q2",
       "period_display": "Q2 2569",
-      "value": 86.68,
-      "month_count": 1,
+      "value": 87.23,
+      "month_count": 2,
       "complete": false,
-      "months": "04",
+      "months": "04,05",
       "provisional": true,
-      "chg_prev_pct": -12.03,
-      "chg_yoy_pct": -9.2
+      "chg_prev_pct": -11.47,
+      "chg_yoy_pct": -8.62
     },
     {
       "category": "truck",
@@ -12596,13 +12647,13 @@
       "period_index": 2,
       "period_label": "Q2",
       "period_display": "Q2 2569",
-      "value": 63.81,
-      "month_count": 1,
+      "value": 65.31,
+      "month_count": 2,
       "complete": false,
-      "months": "04",
+      "months": "04,05",
       "provisional": true,
-      "chg_prev_pct": -4.22,
-      "chg_yoy_pct": -2.77
+      "chg_prev_pct": -1.97,
+      "chg_yoy_pct": -0.48
     }
   ],
   "yearly": [
@@ -12854,13 +12905,13 @@
       "period_index": 2569,
       "period_label": "2569",
       "period_display": "2569",
-      "value": 77.33,
-      "month_count": 4,
+      "value": 76.894,
+      "month_count": 5,
       "complete": false,
-      "months": "01,02,03,04",
+      "months": "01,02,03,04,05",
       "provisional": true,
-      "chg_prev_pct": 6.11,
-      "chg_yoy_pct": 6.11
+      "chg_prev_pct": 5.52,
+      "chg_yoy_pct": 5.52
     },
     {
       "category": "passenger",
@@ -13110,13 +13161,13 @@
       "period_index": 2569,
       "period_label": "2569",
       "period_display": "2569",
-      "value": 95.57,
-      "month_count": 4,
+      "value": 94.012,
+      "month_count": 5,
       "complete": false,
-      "months": "01,02,03,04",
+      "months": "01,02,03,04,05",
       "provisional": true,
-      "chg_prev_pct": 5.18,
-      "chg_yoy_pct": 5.18
+      "chg_prev_pct": 3.46,
+      "chg_yoy_pct": 3.46
     },
     {
       "category": "truck",
@@ -13366,13 +13417,13 @@
       "period_index": 2569,
       "period_label": "2569",
       "period_display": "2569",
-      "value": 65.92,
-      "month_count": 4,
+      "value": 66.098,
+      "month_count": 5,
       "complete": false,
-      "months": "01,02,03,04",
+      "months": "01,02,03,04,05",
       "provisional": true,
-      "chg_prev_pct": 5.32,
-      "chg_yoy_pct": 5.32
+      "chg_prev_pct": 5.6,
+      "chg_yoy_pct": 5.6
     }
   ]
 }
