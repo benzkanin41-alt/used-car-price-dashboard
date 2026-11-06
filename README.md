@@ -23,7 +23,7 @@ https://app.bot.or.th/BTWS_STAT/statistics/BOTWEBSTAT.aspx?reportID=1036&languag
 Coverage ใน dashboard ชุดนี้:
 
 ```text
-ม.ค. 2560 - ส.ค. 2569
+ม.ค. 2560 - ก.ย. 2569
 ```
 
 BOT ระบุฐานดัชนี:
@@ -32,7 +32,7 @@ BOT ระบุฐานดัชนี:
 ปี 2564 = 100
 ```
 
-ณ 26 ต.ค. 2569 งวด ก.ย. 2569 ยังไม่เผยแพร่ในตารางนี้ (กำหนดเผยแพร่วันทำการสุดท้ายของเดือนถัดไป). ตรวจ CSV สดแล้วข้อมูลล่าสุดยังเป็น ส.ค. 2569 โดย ธปท. อัปเดตเมื่อ 30 ก.ย. 2569 เวลา 14:33. ตารางใหม่นี้เปลี่ยนวิธีคำนวณและปีอ้างอิงจาก `EC_EI_040`; ไม่ควรต่อสองชุดเข้าด้วยกัน. ตารางใหม่ย้อนหลังถึง ม.ค. 2560 เท่านั้น.
+ตรวจ CSV สดเมื่อ 6 พ.ย. 2569 ข้อมูลล่าสุดเป็น ก.ย. 2569 โดย ธปท. อัปเดตเมื่อ 31 ต.ค. 2569 เวลา 14:30. นำค่าปรับย้อนหลังจากต้นทางมาคำนวณใหม่ทั้งชุด และ Q3/2569 มีข้อมูลครบ 3 เดือนแล้ว. ตารางใหม่นี้เปลี่ยนวิธีคำนวณและปีอ้างอิงจาก `EC_EI_040`; ไม่ควรต่อสองชุดเข้าด้วยกัน. ตารางใหม่ย้อนหลังถึง ม.ค. 2560 เท่านั้น.
 
 การอัปเดตครั้งต่อไปใน workspace ต้นฉบับ (สคริปต์ `work/` อยู่เหนือโฟลเดอร์ repository นี้): รัน `python work/fetch_bot_919.py 1036` จากโฟลเดอร์หลัก แล้วรัน `python work/build_used_car_dashboard.py --through 2026-09` (ระบุงวดที่ต้องการในรูป YYYY-MM), ตรวจด้วย `python work/validate_dashboard.py` และ browser QA ก่อนคัดลอก outputs ไปยังไฟล์ชื่อเดียวกันในโฟลเดอร์นี้.
 
@@ -58,12 +58,12 @@ screenshots/
 
 ## Validation
 
-Validated locally on 2026-10-26 (BOT source updated 2026-09-30):
+Validated locally on 2026-11-06 (BOT source updated 2026-10-31):
 
 ```text
-monthly rows: 348
+monthly rows: 351
 quarterly rows: 117
 yearly rows: 30
-latest passenger Aug 2026: 87.44
-latest truck Aug 2026: 82.81
+latest passenger Sep 2026: 86.81
+latest truck Sep 2026: 79.67
 ```
